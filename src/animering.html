@@ -22,7 +22,6 @@
             class="logo"
           />
         </a>
-
         <ul class="nav-menu">
           <li class="nav-item">
             <a href="index.html" class="nav-link">Start</a>
@@ -38,7 +37,6 @@
           </li>
           <li class="nav-item"><a href="#" class="nav-link">Kontakt</a></li>
         </ul>
-
         <div class="hamburger">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -57,76 +55,68 @@
           />
         </picture>
         <div class="hero-content">
-          <h1>SASS</h1>
+          <h1>Moment 4</h1>
           <p>
-            Här följer en utvärdering av mitt arbete med SASS. Vilka för- och
-            nackdelar ser jag med SASS? Hur var det att komma igång att arbete
-            med en CSS-preprocessor?
+            Grafiska effekter med CSS - här kommer jag att visa olika typer av
+            animering. Kod för animeringar och design har skapats med hjälp av
+            SASS.
           </p>
+          <div class="btn-container">
+            <a href="about.html" class="btn">Läs mer</a>
+          </div>
         </div>
       </section>
     </header>
     <main>
-      <!-- Sektion 1: Rubrik, text med frågor -->
-      <section class="questions">
-        <h2>SASS Utvärdering</h2>
-        <h3>Vilka för- och nackdelar ser jag med SASS?</h3>
-        <p>Fördelar:</p>
-        <ul>
-          <li>
-            Bättre struktur & underhållbarhet – Genom att dela upp koden i flera
-            SCSS-filer (partials) och använda 7-1-strukturen blir koden mer
-            organiserad och lättare att underhålla.
-          </li>
-          <li>
-            Variabler förenklar hanteringen av färger och typsnitt – Istället
-            för att skriva om samma färgkod eller typsnitt överallt, kan jag
-            använda variabler, vilket gör det enkelt att ändra designen på hela
-            webbplatsen.
-          </li>
-          <li>
-            Nesting gör koden mer läsbar – Att kunna nästla CSS-selektorer
-            minskar behovet av att upprepa klasser och gör koden mer
-            strukturerad.
-          </li>
-        </ul>
-        <p>Nackdelar:</p>
-        <ul>
-          <li>
-            Komplexare arbetsflöde - till skillnad från vanlig CSS kräver SASS
-            att jag använder en kompilator (t.ex. Parcel eller Node-skript) för
-            att generera en CSS-fil, vilket innebär fler steg att hålla koll på.
-          </li>
-          <li>
-            Kan bli för nästlad - om jag nästlar för många nivåer kan det bli
-            svårare att felsöka och underhålla koden.
-          </li>
-          <li>
-            Jag har själv inte lagt märke till det men som jag har förstått det,
-            stöder inte alla webbläsare avancerade funktioner. Även om SASS
-            genererar vanlig CSS kan vissa CSS-funktioner jag använder i mixins
-            eller variabler ändå ha kompatibilitetsproblem i äldre webbläsare.
-          </li>
-        </ul>
-        <h3>Hur var det att komma igång att arbete med en CSS-preprocessor?</h3>
-        <p>
-          Att komma igång med SASS var lite mer komblicerat jämfört med att
-          skriva vanlig CSS. Installationen via npm och att sätta upp en
-          kompilator (Parcel) känns inte som en självklarhet för mig, utan det
-          tar lite tid att förstå, men när allt är på plats blir det mycket
-          smidigare att skriva och organisera min CSS-kod.
-        </p>
-        <p>
-          Det är lite ovant att använda nesting och mixins, men ju mer jag
-          använder det, desto mer inser jag hur fördelaktigt det är. Att arbeta
-          med variabler och partials gjorde koden mer strukturerad, och jag
-          märker att det sparar tid i längden.
-        </p>
-        <p>
-          Sammanfattningsvis var det lite tröskel i början, men efter att ha
-          lärt mig grunderna upplevde jag SASS som ett mycket bättre sätt att
-          skriva CSS på!
-        </p>
+      <!-- Sektion: animering med bildrutor -->
+      <section class="animering">
+        <h2>Kontakta oss</h2>
+        <div class="animering-container">
+          <article class="animering-item">
+            <picture>
+              <source srcset="images/avatar1.png?as=avif" type="image/avif" />
+              <source srcset="images/avatar1.png?as=webp" type="image/webp" />
+              <source srcset="images/avatar1.png?" type="image/jpeg" />
+              <img src="images/avatar1.png" alt="text" class="box-image" />
+            </picture>
+            <h3>Ellen Lidén</h3>
+            <p>elli1807@student.miun.se <br />+46(0)70-405 06 00</p>
+            <button class="btn bounce">Mejla mig</button>
+          </article>
+          <article class="animering-item">
+            <picture>
+              <source srcset="images/avatar2.png?as=avif" type="image/avif" />
+              <source srcset="images/avatar2.png?as=webp" type="image/webp" />
+              <source srcset="images/avatar2.png?" type="image/jpeg" />
+              <img src="images/avatar2.png" alt="text" class="box-image" />
+            </picture>
+            <h3>Ellen Lidén</h3>
+            <p>elli1807@student.miun.se <br />+46(0)70-405 06 00</p>
+            <button class="btn bounce">Mejla mig</button>
+          </article>
+          <article class="animering-item">
+            <picture>
+              <source srcset="images/avatar3.png?as=avif" type="image/avif" />
+              <source srcset="images/avatar3.png?as=webp" type="image/webp" />
+              <source srcset="images/avatar3.png?" type="image/jpeg" />
+              <img src="images/avatar3.png" alt="text" class="box-image" />
+            </picture>
+            <h3>Ellen Lidén</h3>
+            <p>elli1807@student.miun.se <br />+46(0)70-405 06 00</p>
+            <button class="btn bounce">Mejla mig</button>
+          </article>
+        </div>
+      </section>
+      <hr class="divider" />
+      <section class="block-slidein">
+        <div class="slidein-box delay-1">
+          <h3>Visste du att...</h3>
+          <p>Skärgården består av över 30 000 öar, kobbar och skär!</p>
+        </div>
+        <div class="slidein-box delay-2">
+          <h3>Rolig fakta!</h3>
+          <p>Stockholms skärgård är en av Europas största!</p>
+        </div>
       </section>
     </main>
     <footer class="footer">

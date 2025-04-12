@@ -37,7 +37,6 @@
   .nav-item {
     margin: 16px 0;
   }
-  
 
   .hero {
     height: 60vh; //Sätter höjden direkt så att inget överlappar
@@ -143,5 +142,9 @@
       flex-direction: column;
       align-items: center;
     }
+  }
+  .animering-item {
+    width: 70%;
+    min-width: 70%;
   }
 }
